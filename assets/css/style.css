@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 15px;
@@ -59,6 +59,9 @@ main {
   box-shadow: 0 3px 3px #444;
   padding: 2em 1em;
   margin-bottom: 1.5em;
+}
+h2 {
+  font-weight: bold;
 }
 section {
   background-color: #e3e3e3;
@@ -210,11 +213,15 @@ footer a {
     font-size: 4.5rem;
   }
   main article img {
-    border: 4px solid rgb(23, 134, 219);
-    padding: 0.3rem;
+    border: 5px solid rgb(23, 134, 219);
+    outline: 5px solid red;
+    padding: 0.2em;
   }
 }
 @media screen and (min-width: 576px) {
+  body {
+    font-size: 2em;
+  }
   nav ul li {
     margin: 1rem;
   }
@@ -226,5 +233,92 @@ footer a {
   }
   main article h1 {
     font-size: 5rem;
+  }
+  main table {
+    margin: 4em auto;
+    width: 80%;
+  }
+  section h2 {
+    background-color: #969494;
+  }
+  form input {
+    width: 70%;
+  }
+  form input,
+  form button {
+    display: inline-block;
+    padding: 1em 2em;
+  }
+  aside h2 {
+    font-size: 1.8em;
+  }
+  footer {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 990px) {
+  header {
+    padding: 1em;
+    width: 100%;
+    text-align: start;
+    position: relative;
+  }
+  header div {
+    display: inline-block;
+  }
+  header div img {
+    margin: 0;
+  }
+  header div p {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    padding: 1em;
+  }
+  header nav {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    padding: 1em 2em;
+  }
+  header nav ul li {
+    margin: 0;
+  }
+  header ul li a {
+    font-size: 1em;
+  }
+  iframe,
+  section {
+    display: inline-block;
+    max-width: 50%;
+    margin: 0;
+    border-radius: 20px;
+    height: 250px;
+  }
+  iframe {
+    position: relative;
+  }
+  section {
+    position: absolute;
+    margin-right: 55px;
+  }
+  aside h2 {
+    margin: 1.5em 0;
+  }
+  aside p {
+    font-size: 0.9em;
+    margin-top: 0.6em;
+  }
+  aside div {
+    float: left;
+    width: 33.33333%;
+    margin: 0;
+    padding: 1em 0.5em;
+  }
+  aside::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
